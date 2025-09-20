@@ -1,0 +1,35 @@
+{
+	"schemaVersion": 1,
+	"id": "variantsandventures-polymer-patch",
+	"version": "${version}",
+	"name": "Polymer Patch for Variants&Ventures",
+	"description": "Polymer Patch for Variants&Ventures",
+	"authors": [
+		"Digi"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/variantsandventures-polymer-patch/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "com.digi.vavpatch.impl.PolymerPatchForVariantsVentures"
+		]
+	},
+	"mixins": [
+		"variantsandventures-polymer-patch.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.21.8",
+		"java": ">=21",
+		"fabric-api": "*",
+        "variantsandventures": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
